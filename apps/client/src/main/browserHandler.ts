@@ -1,5 +1,4 @@
-
-import { app, BrowserWindow, screen } from 'electron'
+import { app, BrowserWindow } from 'electron'
 import { isDev, resolveHtmlPath } from './utils'
 import path from 'path'
 import { winName } from '../const/index'
@@ -54,9 +53,9 @@ class BrowserHandler {
       minWidth: _width,
       height: _height,
       minHeight: _height,
-      // icon: path.resolve(__dirname, '../../build/24x24.png'),
+      icon: path.resolve(__dirname, '../../build/24x24.png'),
       autoHideMenuBar: true,
-      title: 'vedo client',
+      title: 'shadow ai client',
       titleBarStyle: isMac ? 'hiddenInset' : 'hidden',
       // trafficLightPosition: { x: 10, y: 10 },
       frame: false,
@@ -87,6 +86,7 @@ class BrowserHandler {
       } else {
         win.show()
       }
+
       ipcMainHandler.sendToBrowser({ win, channel: 'setWinName', data: name })
     })
 
@@ -147,6 +147,5 @@ class BrowserHandler {
     }
   }
 }
-
 
 export const browserHandler = new BrowserHandler()

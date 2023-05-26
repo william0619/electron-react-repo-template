@@ -20,7 +20,7 @@ export default defineConfig({
     },
     outDir: path.join(vitePaths.releaseAppPath, './main'),
     emptyOutDir: true,
-    minify: true
+    minify: false
   },
 
   resolve: {

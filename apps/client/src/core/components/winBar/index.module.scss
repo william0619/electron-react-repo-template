@@ -1,0 +1,29 @@
+/**
+   author: william   email:362661044@qq.com
+   create_at:2023/5/26 9:58 AM 
+**/
+
+.bar {
+  padding: 0 12px;
+  background-color: rgba(242, 244, 247, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-app-region: drag;
+  border-bottom: 1px solid #f2f4f7;
+  z-index: 100;
+}
+
+.macBar {
+  height: 38px;
+  display: flex;
+  justify-content: right;
+  padding-right: 18px;
+}
+
+.winBar {
+  height: 40px;
+  .right {
+    display: flex;
+  }
+}

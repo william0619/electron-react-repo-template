@@ -1,8 +1,7 @@
-
 import { BrowserWindow, ipcMain } from 'electron'
 import type { IToMainEvents, IToRendererEvents } from './ipcEvent'
 import type { IpcMainEvent } from 'electron'
-import type { IToMainInvoke } from '@/main/ipc/ipcInvoke'
+import type { IToMainInvoke } from './ipcInvoke'
 
 type ISend<K extends keyof IToRendererEvents> = {
   win: BrowserWindow

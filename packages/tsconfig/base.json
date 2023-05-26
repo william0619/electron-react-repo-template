@@ -22,7 +22,7 @@
     "strict": true,
     "isolatedModules": true,
 
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": false,
 
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

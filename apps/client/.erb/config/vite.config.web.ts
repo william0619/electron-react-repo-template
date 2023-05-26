@@ -16,5 +16,14 @@ export default defineConfig({
     alias: {
       ...alias
     }
+  },
+  // css: {
+  //   modules: {
+  //     localsConvention: 'camelCase',
+  //     generateScopedName: generateScopedName
+  //   }
+  // },
+  server: {
+    open: true
   }
 })
